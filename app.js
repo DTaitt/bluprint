@@ -14,6 +14,11 @@ app.get('/',function(req,res){
   res.send('This is the index for BCAPI (BootCamp API)');
 });
 
+const bootcampRoutes = require('./routes/bootcampRoutes');
+
+app.use('/api/bootcamps', bootcampRoutes);
+
+
 //error handling
 app.get('*',function(req,res){
   res.status(404).send({message: 'Opps! Not found.'})
