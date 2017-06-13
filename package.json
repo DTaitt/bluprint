@@ -1,0 +1,22 @@
+{
+  "name": "bluprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DTaitt/bluprint.git"
+  },
+  "author": "Donovan Taitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DTaitt/bluprint/issues"
+  },
+  "homepage": "https://github.com/DTaitt/bluprint#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
