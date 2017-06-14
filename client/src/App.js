@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+//Importing React Router 
+import {
+  BrowserRouter as Router,
+  Route,
+ 
+} from 'react-router-dom'
+
+//import components
+import Header from './components/Header.jsx';
+import Index from './components/pages/Index.jsx';
+import BootcampsPage from './components/pages/BootcampsPage.jsx';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path="/" component={ Index } />
+          <Route exact path="/bootcamps/:career" component={ BootcampsPage } />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </Router>
     );
   }
 }

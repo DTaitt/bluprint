@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require('cors');
+app.use(cors());
+
 
 //set port
 const PORT = process.env.PORT || 3001;
@@ -17,7 +20,6 @@ app.get('/',function(req,res){
 const bootcampRoutes = require('./routes/bootcampRoutes');
 
 app.use('/api/bootcamps', bootcampRoutes);
-
 
 //error handling
 app.get('*',function(req,res){
