@@ -7,7 +7,9 @@ class Index extends Component {
 	render() {
 		return(
 			<div className="index">
-				<img src="./img/bluprint.png" />
+				<section className="hero">
+					<img src="./img/bluprint.png" />
+				</section>
 				<CareerPicker />
 			</div>
 		)

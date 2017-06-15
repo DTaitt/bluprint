@@ -6,6 +6,7 @@ class CareerPicker extends Component {
 	render() {
 		return(
 			<nav>
+				<h1>Choose your intended field</h1>
 				<ul className="btn_list">
 					<li className="btn"><Link to="/bootcamps/webdevelopment">Web Development</Link></li>
 					<li className="btn"><Link to="/bootcamps/webdesign">Web Design</Link></li>

@@ -15,6 +15,7 @@ class Index extends Component {
 
 	componentDidMount() {
 		this.fetchBootcampData();
+		// this.renderBootcamps();
 	}
 
 	fetchBootcampData() {
@@ -28,8 +29,48 @@ class Index extends Component {
 					BootcampData: jsonRes.data,
 				})
 				console.log(this.state.BootcampData)
+				// this.renderBootcamps()
 			})
 
+	}
+
+	// renderBootcamps() {
+	// 	// if (this.state.isBootcampDataLoaded) {
+	// 		// console.log(this.state.BootcampData)
+	// 		if (document.location.pathname === '/bootcamps/webdevelopment') {
+	// 			this.state.BootcampData.map((info, index) => {
+	//               return <Bootcamp name={ info.name } price={ info.price } length={ info.length } city={ info.city } field={ info.field } key={ index } />
+	//             })
+	//             console.log(this.state.BootcampData)
+	//             console.log('LOADED')
+	// 		} 
+	// 	// } else {
+	// 	// 	<img src="./img/bluprint.png" />
+	// 	// }
+
+	// }
+
+	renderBootcamps() {
+	if (document.location.pathname === '/bootcamps/webdevelopment') {
+		console.log('ON THE WEB DEV PAGE')
+		if (this.state.isBootcampDataLoaded) {
+			console
+			// return (
+			// 	<div>
+			// 		<Storelist brooklynFoodData={ this.state.brooklynFoodData } BootcampData={ this.state.BootcampData } />
+			// 	</div>
+			// ) 
+			this.state.BootcampData.map((info, index) => {
+				return <Bootcamp name={ info.name } price={ info.price } length={ info.length } city={ info.city } field={ info.field } key={ index } />
+			}) 
+		} 
+		// else {
+		// 	return <img className="loading" src="img/loading.gif" /> 
+		// }
+		// else {
+		// 	return <img className="loading" src="img/loading.gif" /> 
+		// }
+		}
 	}
 
 	render() {
@@ -42,7 +83,8 @@ class Index extends Component {
 	              return <Bootcamp name={ info.name } price={ info.price } length={ info.length } city={ info.city } field={ info.field } key={ index } />
 	            })
 	            :
-	            <p>LOADING...</p> }
+	            <img src="./img/loading2.gif" />} 
+	            {/**{ this.renderBootcamps() }**/}
 			</div>
 		)
 	}
