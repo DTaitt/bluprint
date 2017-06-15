@@ -75,8 +75,9 @@ class Index extends Component {
 
 	render() {
 		return(
-			<div className="index">
-				<h1>Web Development Bootcamps</h1>
+			<div className="bootcamps_page">
+				<h1 className="bootcamp_field">Web Development</h1> 
+				<h1 className="title_end">Bootcamps</h1>
 				{ this.state.isBootcampDataLoaded 
 	            ? 
 	            this.state.BootcampData.map((info, index) => {

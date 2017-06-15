@@ -6,8 +6,8 @@ class Bootcamp extends Component {
 		return(
 			<section className="bootcamp">
 				<h2>{ this.props.name }</h2>
-				<p className="price">{ this.props.price }</p>
-				<p className="length">{ this.props.length }</p>
+				<p className="price">${ this.props.price }</p>
+				<p className="length">{ this.props.length } weeks</p>
 				<p className="locations">{ this.props.city }</p>
 				<p>{ this.props.field }</p>
 			</section>

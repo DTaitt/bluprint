@@ -21,37 +21,38 @@ header {
     font-family: 'Dosis', sans-serif;
     font-size: 1.5em; }
 
-section.hero {
+/*INDEX*/
+div.index section.hero {
   background: black;
   height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-nav {
+div.index nav {
   background: #78cae6;
   padding: 20px 10px;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
-  nav h1 {
+  div.index nav h1 {
     text-align: center;
     font-size: 1.6em;
     color: #000;
     text-transform: capitalize;
     letter-spacing: .1em; }
-  nav ul {
+  div.index nav ul {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     justify-content: space-between;
     height: 250px; }
-    nav ul li {
+    div.index nav ul li {
       background: #234c7d;
       height: 60px;
       padding: 0; }
-      nav ul li a, nav ul li a:visited {
+      div.index nav ul li a, div.index nav ul li a:visited {
         display: inline-block;
         width: 100%;
         height: 100%;
@@ -61,5 +62,33 @@ nav {
         color: white;
         font-size: 1.5em;
         letter-spacing: .1em; }
-      nav ul li a:active {
+      div.index nav ul li a:active {
         color: #78cae6; }
+
+/*BOOTCAMPS PAGE*/
+div.bootcamps_page {
+  background: black; }
+
+div.bootcamps_page h1 {
+  padding: 20px 10px;
+  color: white; }
+
+div.bootcamps_page h1.title_end {
+  text-align: right; }
+
+div.bootcamps_page section.bootcamp {
+  background: #78cae6;
+  padding: 10px 5px;
+  border-top: 3px solid black; }
+  div.bootcamps_page section.bootcamp h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.4em;
+    margin-bottom: 15px;
+    border-top: 2px solid white;
+    border-bottom: 3px solid #234c7d;
+    padding: 5px 0; }
+  div.bootcamps_page section.bootcamp p {
+    margin: 15px 0 15px 30px;
+    text-transform: capitalize;
+    font-size: 1.2em; }
