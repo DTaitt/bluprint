@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li, a {
 	font-family: 'Open Sans', sans-serif;
+	color: #000;
 }
 
 a, a:hover {
@@ -25,7 +26,12 @@ header {
   	color: white;
   	font-family: 'Dosis', sans-serif;
   	font-size: 1.5em;
+  	// text-transform: uppercase;
+  	letter-spacing: 0.1em;
   }
+  // p.welcome::first-letter {
+  // 	font-size: 1.6em;
+  // }
 }
 
 /*INDEX*/
@@ -65,6 +71,7 @@ div.index nav {
 			// margin: 10px;
 			height: 60px;
 			padding: 0;
+			text-transform: uppercase;
 			a, a:visited {
 				display: inline-block;
 				width: 100%;
@@ -91,7 +98,7 @@ div.bootcamps_page {
 div.bootcamps_page h1 {
 	padding: 20px 10px;
 	color: white;
-
+	text-decoration: underline double peachpuff;
 }
 
 div.bootcamps_page h1.title_end {
@@ -103,6 +110,8 @@ div.bootcamps_page section.bootcamp {
 	padding: 10px 5px;
 	// margin-bottom: 5px;
 	border-top: 3px solid black;
+	display: flex;
+	flex-direction: column;
 	h2 {
 		text-align: center;
 		text-transform: capitalize;
@@ -110,11 +119,21 @@ div.bootcamps_page section.bootcamp {
 		margin-bottom: 15px;
 		border-top: 2px solid white;
 		border-bottom: 3px solid rgb(35, 76, 125);
+		// border-left: 2px solid peachpuff;
+		// border-right: 2px solid peachpuff;
 		padding: 5px 0;
 	}
-	p {
+	p, a {
 		margin: 15px 0 15px 30px;
 		text-transform: capitalize;
 		font-size: 1.2em;
+	}
+	a.locations {
+		// background: indianred;
+		background: peachpuff;
+		margin: auto;
+		align-self: space-around;
+		width: 50%;
+		border: 1px solid rgb(35, 76, 125);
 	}
 }

@@ -28,7 +28,7 @@ class Index extends Component {
 					isBootcampDataLoaded: true,
 					BootcampData: jsonRes.data,
 				})
-				console.log(this.state.BootcampData)
+				// console.log(this.state.BootcampData)
 				// this.renderBootcamps()
 			})
 

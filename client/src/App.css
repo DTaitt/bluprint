@@ -3,7 +3,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Dosis', sans-serif; }
 
 p, li, a {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: #000; }
 
 a, a:hover {
   text-decoration: none;
@@ -19,7 +20,8 @@ header {
   header p.welcome {
     color: white;
     font-family: 'Dosis', sans-serif;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    letter-spacing: 0.1em; }
 
 /*INDEX*/
 div.index section.hero {
@@ -51,7 +53,8 @@ div.index nav {
     div.index nav ul li {
       background: #234c7d;
       height: 60px;
-      padding: 0; }
+      padding: 0;
+      text-transform: uppercase; }
       div.index nav ul li a, div.index nav ul li a:visited {
         display: inline-block;
         width: 100%;
@@ -71,7 +74,8 @@ div.bootcamps_page {
 
 div.bootcamps_page h1 {
   padding: 20px 10px;
-  color: white; }
+  color: white;
+  text-decoration: underline double peachpuff; }
 
 div.bootcamps_page h1.title_end {
   text-align: right; }
@@ -79,7 +83,9 @@ div.bootcamps_page h1.title_end {
 div.bootcamps_page section.bootcamp {
   background: #78cae6;
   padding: 10px 5px;
-  border-top: 3px solid black; }
+  border-top: 3px solid black;
+  display: flex;
+  flex-direction: column; }
   div.bootcamps_page section.bootcamp h2 {
     text-align: center;
     text-transform: capitalize;
@@ -88,7 +94,13 @@ div.bootcamps_page section.bootcamp {
     border-top: 2px solid white;
     border-bottom: 3px solid #234c7d;
     padding: 5px 0; }
-  div.bootcamps_page section.bootcamp p {
+  div.bootcamps_page section.bootcamp p, div.bootcamps_page section.bootcamp a {
     margin: 15px 0 15px 30px;
     text-transform: capitalize;
     font-size: 1.2em; }
+  div.bootcamps_page section.bootcamp a.locations {
+    background: peachpuff;
+    margin: auto;
+    align-self: space-around;
+    width: 50%;
+    border: 1px solid #234c7d; }

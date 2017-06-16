@@ -8,7 +8,7 @@ class Index extends Component {
 		return(
 			<div className="index">
 				<section className="hero">
-					<img src="./img/bluprint.png" />
+					<img src="./img/bluprint.png" alt="bluprint logo" />
 				</section>
 				<CareerPicker />
 			</div>

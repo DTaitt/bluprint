@@ -12,6 +12,7 @@ import {
 import Header from './components/Header.jsx';
 import Index from './components/pages/Index.jsx';
 import BootcampsPage from './components/pages/BootcampsPage.jsx';
+import LocationsPage from './components/pages/LocationsPage.jsx';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={ Index } />
           <Route exact path="/bootcamps/:career" component={ BootcampsPage } />
+          <Route exact path="/locations/:place" component={ LocationsPage } />
         </div>
       </Router>
     );
